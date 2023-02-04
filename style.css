@@ -15,14 +15,21 @@
     --light-grey-three: #DEE2E6;
     --light-grey-four: #E9ECEF;
     --lightest-grey: #F8F9FA;
-    --header-font-size: 20px;
+    --header-font-size: 24px;
 }
 
 @font-face {
-    font-family: IsidoraSansAltBold;
-    src: url(/isidorasans/IsidoraSansAlt-Bold.ttf);
+    font-family: IsidoraSans;
+    src: url(isidorasans/IsidoraSansAlt-Bold.ttf);
 }
-
+@font-face {
+    font-family: IsidoraSansLight;
+    src: url(isidorasans/IsidoraSansAlt-Light.ttf);
+}
+@font-face {
+    font-family: IsidoraSansMedium;
+    src: url(isidorasans/IsidoraSansAlt-Medium.ttf);
+}
 .home{
     background: var(--light-grey-four);
 }
@@ -39,14 +46,110 @@
 }
 
 .name__logo{
-    font-family: IsidoraSansAltBold;
-    font-size: 25px;
+    font-size: 30px;
+}
+.name__logo span{
+    font-family: IsidoraSans;
 }
 
 .contact__link a{
     text-decoration: none;
     color: var(--darkest-grey);
     border: 2px solid var(--darkest-grey);
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 20px 30px;
+    border-radius: 30px;
+}
+
+.contact__link a:hover{
+    background: var(--darkest-grey);
+    color: var(--lightest-grey);
+}
+
+.nav__underline{
+    margin: 0 20px;
+    animation: linemove 2s ease-in-out;
+}
+
+@keyframes linemove{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.hero__content__left{
+    font-size: 72px;
+    padding: 70px;
+    line-height: 1.5;
+}
+
+.hero__content__left h1{
+    font-family: IsidoraSansLight;
+}
+
+.top__text{
+    animation: moveup ease-in-out 1s;
+}
+
+@keyframes moveup{
+    0%{
+        transform: translateY(20%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.middle__text{
+    padding-top: 50px;
+    color: var(--darkest-grey);
+}
+
+.down__text{
+    font-family: IsidoraSansLight;
+    font-size: 64px;
+    padding-bottom: 10px;
+    color: var(--dark-grey-two);
+}
+
+.about__section{
+    background: var(--darkest-grey);
+    display: flex;
+    padding-top: 150px;
+}
+
+.about__left{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-top: 100px; */
+    padding-left: 100px;
+    color: var(--lightest-grey);
+    border: 1px solid yellow;
+}
+
+.about__text__container{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+}
+
+.about__top__text{
+    font-family: IsidoraSansMedium;
+    font-size: 36px;
+}
+
+.about__middle__text{
+    font-family: IsidoraSansMedium;
+    padding-left: 50px;
+    font-size: 48px;
+}
+
+.about__right img{
+    height: auto;
+    max-width: 100%;
+    padding: 100px;
 }
