@@ -30,10 +30,14 @@
     font-family: IsidoraSansMedium;
     src: url(isidorasans/IsidoraSansAlt-Medium.ttf);
 }
+@font-face {
+    font-family: IsidoraSansRegular;
+    src: url(isidorasans/IsidoraSansAlt-Regular.ttf);
+}
 .home{
     background: var(--light-grey-four);
 }
-
+                      /* NavBar Section */
 .home__nav{
     display: flex;
     align-items: center;
@@ -78,7 +82,7 @@
         width: 100%;
     }
 }
-
+           /* Hero Section */
 .hero__content__left{
     font-size: 72px;
     padding: 70px;
@@ -114,6 +118,7 @@
     color: var(--dark-grey-two);
 }
 
+               /* About Section */
 .about__section{
     background: var(--darkest-grey);
     display: flex;
@@ -124,17 +129,14 @@
     font-size: 24px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* padding-top: 100px; */
+    padding-top: 100px;
     padding-left: 100px;
     color: var(--lightest-grey);
-    border: 1px solid yellow;
 }
 
 .about__text__container{
     display: flex;
     flex-direction: row;
-    border: 1px solid red;
 }
 
 .about__top__text{
@@ -144,8 +146,35 @@
 
 .about__middle__text{
     font-family: IsidoraSansMedium;
-    padding-left: 50px;
+    padding-left: 120px;
     font-size: 48px;
+}
+
+.about__text__bottom{
+    display: flex;
+    flex-direction: row;
+    padding-top: 170px;
+}
+
+.about__text__bottom__education{
+    font-family: IsidoraSansMedium;
+    font-size: 36px;
+}
+
+.about__text__bottom__interests{
+    font-family: IsidoraSansMedium;
+    padding-left: 120px;
+    font-size: 36px;
+}
+
+.about__text__bottom h3{
+    font-size: 36px;
+}
+
+.about__text__bottom p{
+    font-family: IsidoraSansRegular;
+    font-size: 32px;
+    padding-top: 20px;
 }
 
 .about__right img{
@@ -153,3 +182,11 @@
     max-width: 100%;
     padding: 100px;
 }
+
+         /* Projects Section */
+.projects__section{
+    padding: 150px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
