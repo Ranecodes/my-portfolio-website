@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --darkest-grey: #212529;
+    --dark-grey-one: #343a40;
+    --dark-grey-two: #495057;
+    --dark-grey-three: #6c757d;
+    --light-grey-one: #ADB5BD;
+    --light-grey-two: #CED4DA;
+    --light-grey-three: #DEE2E6;
+    --light-grey-four: #E9ECEF;
+    --lightest-grey: #F8F9FA;
+    --header-font-size: 20px;
+}
+
+@font-face {
+    font-family: IsidoraSansAltBold;
+    src: url(/isidorasans/IsidoraSansAlt-Bold.ttf);
+}
+
+.home{
+    background: var(--light-grey-four);
+}
+
+.home__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 60px;
+    font-size: var(--header-font-size);
+    
+    color: var(--darkest-grey);
+}
+
+.name__logo{
+    font-family: IsidoraSansAltBold;
+    font-size: 25px;
+}
+
+.contact__link a{
+    text-decoration: none;
+    color: var(--darkest-grey);
+    border: 2px solid var(--darkest-grey);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
