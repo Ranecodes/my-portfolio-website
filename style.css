@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 :root{
@@ -15,27 +17,22 @@
     --light-grey-three: #DEE2E6;
     --light-grey-four: #E9ECEF;
     --lightest-grey: #F8F9FA;
+    --background-clr: #F5F5F5;
     --header-font-size: 24px;
 }
 
-@font-face {
-    font-family: IsidoraSans;
-    src: url(isidorasans/IsidoraSansAlt-Bold.ttf);
+
+#preloader{
+    background: #000 url(/images/loadinggif.gif) no-repeat center center ;
+    background-size: 50%;;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }
-@font-face {
-    font-family: IsidoraSansLight;
-    src: url(isidorasans/IsidoraSansAlt-Light.ttf);
-}
-@font-face {
-    font-family: IsidoraSansMedium;
-    src: url(isidorasans/IsidoraSansAlt-Medium.ttf);
-}
-@font-face {
-    font-family: IsidoraSansRegular;
-    src: url(isidorasans/IsidoraSansAlt-Regular.ttf);
-}
+
 .home{
-    background: var(--light-grey-four);
+    background: var(--background-clr);
 }
                       /* NavBar Section */
 .home__nav{
@@ -49,28 +46,28 @@
     color: var(--darkest-grey);
 }
 
-.name__logo{
-    font-size: 30px;
-}
 .name__logo span{
-    font-family: IsidoraSans;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
 }
-
+.title__desc span{
+    margin-left: 32px;
+}
 .contact__link a{
     text-decoration: none;
-    color: var(--darkest-grey);
+    background: #1F1F1F;
+    color: #FCFCFC;
     border: 2px solid var(--darkest-grey);
     padding: 20px 30px;
     border-radius: 30px;
 }
 
 .contact__link a:hover{
-    background: var(--darkest-grey);
-    color: var(--lightest-grey);
+    background: var(--background-clr);
+    color: #1F1F1F ;
 }
 
 .nav__underline{
-    margin: 0 20px;
     animation: linemove 2s ease-in-out;
 }
 
@@ -84,17 +81,14 @@
 }
            /* Hero Section */
 .hero__content__left{
-    font-size: 72px;
-    padding: 70px;
+    padding: 30px;
     line-height: 1.5;
-}
-
-.hero__content__left h1{
-    font-family: IsidoraSansLight;
+    font-size: 96px;
 }
 
 .top__text{
     animation: moveup ease-in-out 1s;
+    color: var(--darkest-grey);
 }
 
 @keyframes moveup{
@@ -112,7 +106,6 @@
 }
 
 .down__text{
-    font-family: IsidoraSansLight;
     font-size: 64px;
     padding-bottom: 10px;
     color: var(--dark-grey-two);
@@ -140,12 +133,10 @@
 }
 
 .about__top__text{
-    font-family: IsidoraSansMedium;
     font-size: 36px;
 }
 
 .about__middle__text{
-    font-family: IsidoraSansMedium;
     padding-left: 120px;
     font-size: 48px;
 }
@@ -157,12 +148,10 @@
 }
 
 .about__text__bottom__education{
-    font-family: IsidoraSansMedium;
     font-size: 36px;
 }
 
 .about__text__bottom__interests{
-    font-family: IsidoraSansMedium;
     padding-left: 120px;
     font-size: 36px;
 }
@@ -172,7 +161,6 @@
 }
 
 .about__text__bottom p{
-    font-family: IsidoraSansRegular;
     font-size: 32px;
     padding-top: 20px;
 }
