@@ -51,7 +51,9 @@
     font-size: 30px;
     font-family: "Poppins", sans-serif;
 }
-.title__desc span{
+.title__desc a{
+    text-decoration: none;
+    color: #000;
     margin-left: 32px;
 }
 .contact__link a{
@@ -151,7 +153,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .hcb__left_t2{
@@ -161,7 +163,7 @@
     align-items: center;
     padding-top: 50px;
     padding-left: 80px;
-    font-size: 18px;
+    font-size: 24px;
     bottom: 50px;
     left: 200px;
 }
@@ -204,66 +206,43 @@
 .about__section{
     background: var(--darkest-grey);
     display: flex;
-    padding-top: 150px;
+    padding-top: 65px;
 }
 
 .about__left{
     font-size: 24px;
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
-    padding-left: 100px;
+    padding: 64px 170px;
     color: var(--lightest-grey);
-}
-
-.about__text__container{
-    display: flex;
-    flex-direction: row;
 }
 
 .about__top__text{
     font-size: 36px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
 }
 
-.about__middle__text{
-    padding-left: 120px;
-    font-size: 48px;
+.about__top__text_p{
+    padding-top: 24px;
+    font-weight: 400;
 }
 
-.about__text__bottom{
-    display: flex;
-    flex-direction: row;
-    padding-top: 170px;
-}
-
-.about__text__bottom__education{
-    font-size: 36px;
-}
-
-.about__text__bottom__interests{
-    padding-left: 120px;
-    font-size: 36px;
-}
-
-.about__text__bottom h3{
-    font-size: 36px;
-}
-
-.about__text__bottom p{
-    font-size: 32px;
-    padding-top: 20px;
-}
-
-.about__right img{
-    height: auto;
-    max-width: 100%;
-    padding: 100px;
-}
 
          /* Projects Section */
 .projects__section{
-    padding: 150px 100px;
     display: flex;
+    padding-top: 100px;
     justify-content: space-between;
 }
 
+.projects__section__title{
+    display: flex;
+    padding-left: 111px;
+}
+
+.projects__section__title img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
