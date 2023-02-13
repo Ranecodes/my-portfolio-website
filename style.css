@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,600&display=swap');
 
 *{
     margin: 0;
@@ -80,11 +81,99 @@
     }
 }
            /* Hero Section */
+
+.hero__section{
+    overflow: hidden;
+}
+
 .hero__content__left{
     padding: 30px;
     line-height: 1.5;
     font-size: 96px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    transform: translateX(100%);
+    animation: my-animation 15s linear infinite;
 }
+
+@keyframes my-animation{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.nav__underline{
+    background-color: #1F1F1F;
+}
+
+.hcl__1{
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-style: italic;
+    margin-right: 50px;
+}
+
+.hcl__2{
+    padding-right: 40px;
+}
+
+.hcl__3{
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+}
+
+.hero__content_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+    position: relative;
+}
+
+.hero__content__bottom__left{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    margin-left: 70px;
+}
+
+.hero__content__bottom__left img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.hcb__left_t1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+.hcb__left_t2{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 80px;
+    font-size: 18px;
+    bottom: 50px;
+    left: 200px;
+}
+
+.NasaPicture{
+    max-width: 100%;
+    height: 430px;
+    padding-right: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
 
 .top__text{
     animation: moveup ease-in-out 1s;
