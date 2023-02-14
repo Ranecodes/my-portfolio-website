@@ -238,11 +238,49 @@
 
 .projects__section__title{
     display: flex;
-    padding-left: 111px;
+    padding: 0 111px;
 }
 
 .projects__section__title img{
     width: 40px;
     height: 40px;
     margin-right: 20px;
+}
+
+.projects__list{
+    width: 60%;
+    padding-left: 200px;
+    padding-right: 40px;
+}
+
+.projects__list__frame p{
+    padding-top: 20px;
+}
+
+.projects__list__frame a{
+    text-decoration: none;
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.projects__list__frame_r{
+    padding-top: 40px;
+}
+
+.projects__list__frame hr{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.find__more__link{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 70px;
+    padding-right: 50px;
+}
+
+.find__more__link h3{
+    margin-right: 30px;
 }
