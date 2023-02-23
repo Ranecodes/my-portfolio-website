@@ -123,11 +123,12 @@
 
 .hcl__2{
     padding-right: 40px;
+    padding-left: 40px;
 }
 
 .hcl__3{
-    font-family: "Playfair Display", serif;
-    font-weight: 600;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
 }
 
 .hero__content_bottom{
