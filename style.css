@@ -19,7 +19,7 @@
     --light-grey-four: #E9ECEF;
     --lightest-grey: #F8F9FA;
     --background-clr: #F5F5F5;
-    --header-font-size: 24px;
+    --header-font-size: 16px;
 }
 
 
@@ -48,7 +48,7 @@
 }
 
 .name__logo span{
-    font-size: 30px;
+    font-size: 20px;
     font-family: "Poppins", sans-serif;
 }
 .title__desc a{
@@ -57,11 +57,12 @@
     margin-left: 32px;
 }
 .contact__link a{
+    font-size: 14px;
     text-decoration: none;
     background: #1F1F1F;
     color: #FCFCFC;
     border: 2px solid var(--darkest-grey);
-    padding: 20px 30px;
+    padding: 12px 28px;
     border-radius: 30px;
 }
 
@@ -153,7 +154,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .hcb__left_t2{
@@ -163,7 +164,7 @@
     align-items: center;
     padding-top: 50px;
     padding-left: 80px;
-    font-size: 24px;
+    font-size: 18px;
     bottom: 50px;
     left: 200px;
 }
@@ -210,7 +211,7 @@
 }
 
 .about__left{
-    font-size: 24px;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     padding: 64px 170px;
@@ -218,7 +219,7 @@
 }
 
 .about__top__text{
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
 }
@@ -226,6 +227,7 @@
 .about__top__text_p{
     padding-top: 24px;
     font-weight: 400;
+    line-height: 28.8px;
 }
 
 
@@ -238,7 +240,7 @@
 
 .projects__section__title{
     display: flex;
-    padding: 0 111px;
+    padding: 0 68.5px;
 }
 
 .projects__section__title img{
@@ -249,7 +251,6 @@
 
 .projects__list{
     width: 60%;
-    padding-left: 200px;
     padding-right: 40px;
 }
 
