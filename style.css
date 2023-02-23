@@ -239,10 +239,12 @@
 
 .about__btm__text h4{
     font-weight: 400;
+    padding-right: 16px;
 }
 
 .about__btm__text span{
     border-radius: 4px;
+    font-size: 14px;
     background-color: #2E2E2E;
     padding: 8px 48.5px;
 }
