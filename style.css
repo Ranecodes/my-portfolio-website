@@ -311,8 +311,126 @@
     align-items: center;
     padding-top: 70px;
     padding-right: 50px;
+    padding-bottom: 83px;
 }
 
 .find__more__link h3{
     margin-right: 30px;
+    font-weight: 400;
+}
+
+.contact__section{
+    overflow: hidden;
+}
+
+.contact__top{
+    padding: 30px;
+    line-height: 1.5;
+    font-size: 96px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    color: #1F1F1F;
+    transform: translateX(100%);
+    animation: my-animation 15s linear infinite;
+}
+
+.cs__1{
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    font-size: 96px;
+    padding-right: 64px;
+    letter-spacing: -5px;
+}
+
+.cs__2{
+    padding: 0 20px;
+}
+
+.cs__3{
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    font-size: 96px;
+    padding-left: 64px;
+    letter-spacing: -5px;
+}
+
+.contact__mid__sec{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+}
+
+.cfl{
+    display:inline-grid;
+}
+
+.cfl__box{
+    padding: 18px 16px;
+    border: 1px solid #EAEAEA;
+    border-radius: 4px;
+    background: none;
+    width: 373px;
+}
+
+.cfl__label{
+    padding-bottom: 13px;
+    padding-left: 5px;
+}
+
+.contact__form__right{
+    display: inline-grid;
+    width: 757px;
+    padding-top: 30px;
+}
+
+.cfr__label{
+    padding-bottom: 13px;
+    padding-left: 5px;}
+
+.cfl__textarea{
+    padding: 18px 16px;
+    border: 1px solid #EAEAEA;
+    border-radius: 4px;
+    background: none;
+    width: 757px;
+    height: 200px;
+}
+
+.submit__btn{
+    background: #1F1F1F;
+    color: #FCFCFC;
+    border: 2px solid var(--darkest-grey);
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-top: 64px;
+    margin-bottom: 103px;
+}
+
+footer{
+    background: #1F1F1F;
+    padding: 18px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name__logo_2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.name__logo_icons i{
+    width: 34px;
+    color:#FFFFFF;
 }
