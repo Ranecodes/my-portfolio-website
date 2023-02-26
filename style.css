@@ -434,3 +434,16 @@ footer{
     width: 34px;
     color:#FFFFFF;
 }
+
+.designer_cnr{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.designer_cnr a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
