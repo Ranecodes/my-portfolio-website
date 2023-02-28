@@ -367,6 +367,7 @@
     display: flex;
     justify-content: center;
     padding-top: 80px;
+    line-height: 36px;
 }
 
 .contact__form{
@@ -376,16 +377,36 @@
     padding-top: 64px;
 }
 
+.contact__form__left{
+    display:flex;
+}
+
 .cfl{
     display:inline-grid;
 }
 
-.cfl__box{
+.cfl__1{
+    padding-right: 10px;
+}
+
+.cfl__2{
+    padding-left: 10px;
+}
+
+.cfl__box__1{
     padding: 18px 16px;
     border: 1px solid #EAEAEA;
     border-radius: 4px;
     background: none;
-    width: 373px;
+    width: 365px;
+}
+
+.cfl__box__2{
+    padding: 18px 16px;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    background: none;
+    width: 365px;
 }
 
 .cfl__label{
@@ -395,7 +416,6 @@
 
 .contact__form__right{
     display: inline-grid;
-    width: 757px;
     padding-top: 30px;
 }
 
@@ -408,7 +428,7 @@
     border: 1px solid #EAEAEA;
     border-radius: 4px;
     background: none;
-    width: 757px;
+    width: 750px;
     height: 200px;
 }
 
@@ -440,7 +460,7 @@ footer{
 }
 
 .name__logo_icons i{
-    width: 34px;
+    width: 40px;
     color:#FFFFFF;
 }
 
@@ -449,6 +469,7 @@ footer{
     font-weight: 400;
     font-size: 14px;
     color: #ffffff;
+    margin-left: 150px;
 }
 
 .designer_cnr a{
