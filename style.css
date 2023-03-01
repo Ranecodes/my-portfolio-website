@@ -367,7 +367,7 @@
     display: flex;
     justify-content: center;
     padding-top: 80px;
-    line-height: 36px;
+    line-height: 30px;
 }
 
 .contact__form{
@@ -416,7 +416,7 @@
 
 .contact__form__right{
     display: inline-grid;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .cfr__label{
