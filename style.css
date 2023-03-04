@@ -56,21 +56,82 @@
     text-decoration: none;
     color: #000;
     margin-left: 32px;
+    position: relative;
+    padding-bottom: 7px;
 }
-.contact__link a{
+
+.title__desc a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+   
+    height: 3px;
+    background: #FDAEFF;
+    transition: 0.3s;
+}
+/* About Me Underline Animation */
+.title__desc .about__me::before{
+    width: 100%;
+    transform: scaleX(0);
+}
+
+.title__desc .about__me:hover::before{
+    transform: scaleX(1);
+}
+
+
+/* Projects Underline Animation */
+.title__desc .projects::before{
+    width: 100%;
+    transform: scaleX(0);
+}
+
+.title__desc .projects:hover::before{
+    transform: scaleX(1);
+}
+
+.contact__link button{
     font-size: 14px;
     text-decoration: none;
     background: #1F1F1F;
-    color: #FCFCFC;
-    border: 2px solid var(--darkest-grey);
+    border: none;
     padding: 12px 28px;
     border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.5s;
 }
 
-.contact__link a:hover{
-    background: var(--background-clr);
-    color: #1F1F1F ;
+.contact__link a{
+    text-decoration: none;
+    color: #FCFCFC;
 }
+
+.contact__link button::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background: #FDAEFF;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    border-radius: 50% 50% 0 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.contact__link button:hover:before{
+    height: 180%;
+}
+
+.contact__link button:hover > a {
+    color: #000;
+}
+
 
 .nav__underline{
     animation: linemove 2s ease-in-out;
