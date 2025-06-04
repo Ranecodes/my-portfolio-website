@@ -19,11 +19,14 @@
     <main class="home">
       <nav class="home__nav">
         <div class="name__logo">
-          <span>Raneh</span>
+          <a href="/">Raneh</a>
         </div>
 
         <div class="contact__link">
-          <button class="contact__btn">
+          <a
+            href="https://www.linkedin.com/in/raneh-egbe/"
+            class="contact__btn"
+          >
             <svg
               width="48"
               height="48"
@@ -37,9 +40,11 @@
                 fill="white"
               />
             </svg>
-          </button>
+          </a>
 
-          <a href="/" class="contact__link_btn">Leave a Message</a>
+          <a href="#contact__section" class="contact__link_btn"
+            >Leave a Message</a
+          >
         </div>
       </nav>
       <hr class="nav__underline" />
@@ -411,7 +416,7 @@
 
         <div class="placeholder">
           <h3>Since you’re still scrolling, here’s a little bit about me</h3>
-          <div  class="dots">.</div>
+          <div class="dots">.</div>
           <!-- <img
             src="/images/emoji4.png"
             style="height: 24px; width: 24px"
@@ -451,21 +456,23 @@
           </div>
 
           <p class="about__top__text_p">
-            I'm currently studying at AltSchool Africa School of Software
-            Engineering Class of 2022. <br />
-            I’m currently learning JavaScript and Reactjs. <br />
-            I’m looking for help with open source projects, hackathons,
-            internships, and entry-level opportunities. I don't have anything
-            else to say so these are fillers till I find something to say about
-            myself. This is another unimportant line of words that don't mean
-            anything but serves as a filler. <br />
+            From studying rocks to building digital experiences – my journey
+            from Geology to Frontend Engineering has been anything but ordinary.
+            <br />
+            I create accessible, user-friendly web apps using React, TypeScript,
+            and Tailwind CSS, while exploring Vue.js, Nuxt, and Python.
+            <br />
+            Currently learning backend (Python gang 🐍), contributing to
+            real-world projects, and open to internships, hackathons, and
+            full-time opportunities.<br />
+            Let's build cool things together and have fun while at it!<br />
           </p>
           <div class="about__btm__text">
             <h4>My Languages>></h4>
             <span>React</span>
             <span>JavaScript</span>
-            <span>HTML</span>
-            <span>CSS</span>
+            <span>TypeScript</span>
+            <span>Nextjs</span>
             <span>Vue</span>
           </div>
         </div>
@@ -489,17 +496,22 @@
               />
             </svg>
 
-            <div style="display: flex; align-items: baseline;">
+            <div style="display: flex; align-items: baseline">
               <h3>Other times I like</h3>
-              <div class="dots" style="font-family: Roboto Mono; font-size: 26px;">.</div>
+              <div
+                class="dots"
+                style="font-family: Roboto Mono; font-size: 26px"
+              >
+                .
+              </div>
             </div>
-            
+
             <p>
-              I like to read books, watch movies, and listen to music. I also
-              enjoy cooking and trying out new recipes. When I'm not coding, you
-              can find me hanging out with friends or exploring new places. I
-              love learning new things and challenging myself to grow both
-              personally and professionally.
+              I like to listen to music, go swimming, and play the piano. I also
+              enjoy teaching kids, I am a sunday school teacher in church. When
+              I'm not coding, you can find me hanging out with friends or
+              crocheting a bucket hat. I love learning new things and
+              challenging myself to grow both personally and professionally.
             </p>
           </div>
           <div class="info__section__right">
@@ -519,9 +531,14 @@
               />
             </svg>
 
-             <div style="display: flex; align-items: baseline;">
+            <div style="display: flex; align-items: baseline">
               <h3>Currently listening to</h3>
-              <div class="dots" style="font-family: Roboto Mono; font-size: 26px;">.</div>
+              <div
+                class="dots"
+                style="font-family: Roboto Mono; font-size: 26px"
+              >
+                .
+              </div>
             </div>
             <p>I really like this song called Kilimanjaro by Tsuni.</p>
           </div>
@@ -530,30 +547,49 @@
 
       <hr class="nav__underline" />
       <!-- CONTACT SECTION -->
-      <section class="contact__section">
+      <section id="contact__section" class="contact__section">
         <div class="contact__mid__sec">
           <h3>Talk to me</h3>
-          I’m always open to collaborate, so if you have a proposal,  <br />
-          question or if you just want to say hi...</div
+          <p>
+            I’m always open to collaborate, so if you have a proposal, <br />
+            question or if you just want to say
+            <span style="display: inline-flex; align-items: center; gap: 5px">
+              hi<span class="dots" style="width: 3rem;">.</span>
+            </span>
+          </p>
+        </div>
+        <form
+          action="https://formsubmit.co/ranehobasi@gmail.com"
+          method="POST"
+          class="contact__form"
         >
-        <form action="" class="contact__form">
           <div class="contact__form__left">
             <div class="cfl cfl__1">
               <label class="cfl__label" for="Name">Name</label>
-              <input class="cfl__box__1" type="text" placeholder="Who am I speaking with?" />
+              <input
+                class="cfl__box__1"
+                name="name"
+                type="text"
+                placeholder="Who am I speaking with?"
+              />
             </div>
           </div>
           <div class="contact__form__left">
             <div class="cfl cfl__2">
               <label class="cfl__label" for="Name">Email</label>
-              <input class="cfl__box__1" type="text"  placeholder="Your Email Address" />
+              <input
+                class="cfl__box__1"
+                type="text"
+                name="email"
+                placeholder="Your Email Address"
+              />
             </div>
           </div>
           <div class="contact__form__right">
             <label class="cfr__label" for="message">Your Message</label>
             <textarea
               class="cfl__textarea"
-              name=""
+              name="message"
               id=""
               cols="30"
               rows="10"

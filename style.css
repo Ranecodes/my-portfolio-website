@@ -31,6 +31,10 @@
   z-index: 100;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .home {
   background: var(--background-clr);
 }
@@ -46,11 +50,13 @@
   color: var(--darkest-grey);
 }
 
-.name__logo span {
+.name__logo a {
   font-size: 24px;
   font-weight: 600;
   font-family: "Playfair Display", sans-serif;
   font-style: italic;
+  text-decoration: none;
+  color: #0C0C0C;
 }
 
 .contact__link {
@@ -511,10 +517,11 @@
 
 .dots {
   display: inline-block;
-  width: 1.5em; /* enough space for 3 dots */
+  width: 2em; /* enough space for 3 dots */
   text-align: left;
   font-family: monospace;
-  padding-top: 5px;
+  position: relative;
+  top: 2px; 
 }
 
 .contact__section {
