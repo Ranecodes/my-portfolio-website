@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,600&display=swap");
 
 * {
@@ -35,6 +35,14 @@ html {
   scroll-behavior: smooth;
 }
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .home {
   background: var(--background-clr);
 }
@@ -43,11 +51,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   padding: 50px 60px;
   font-size: var(--header-font-size);
-
   color: var(--darkest-grey);
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .name__logo a {
@@ -56,16 +66,18 @@ html {
   font-family: "Playfair Display", sans-serif;
   font-style: italic;
   text-decoration: none;
-  color: #0C0C0C;
+  color: #0c0c0c;
 }
 
 .contact__link {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .contact__link_btn {
+   display: inline-block;
   font-size: 14px;
   text-decoration: none;
   /* background: #fc85d4; */
@@ -79,6 +91,11 @@ html {
   cursor: pointer;
   transition: all 1s;
   margin-left: 24px;
+  white-space: nowrap;
+}
+
+.contact__link_icon {
+  display: none;
 }
 
 .contact__btn,
@@ -96,6 +113,10 @@ html {
   z-index: 1;
   cursor: pointer;
   transition: all 1s;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #0c0c0c;
 }
 
 .contact__link a {
@@ -179,6 +200,76 @@ html {
   animation: linemove 2s ease-in-out;
 }
 
+
+
+
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .home__nav {
+    padding: 20px 20px; /* Reduced padding for mobile */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+  }
+  
+  .name__logo a {
+    font-size: 20px; /* Slightly smaller on mobile */
+  }
+  
+  .contact__btn svg,
+.contact__link_icon svg {
+  display: block; /* removes weird inline spacing */
+}
+  
+  .contact__link_btn {
+    display: none;
+  }
+
+  .contact__link_icon {
+    display: inline-block;
+    margin-left: 16px;
+  }
+  
+   .contact__link_icon svg {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home__nav {
+    padding: 16px 16px; /* Even smaller padding for very small screens */
+  }
+  
+  .name__logo a {
+    font-size: 18px;
+  }
+  
+  .contact__link_btn {
+    font-size: 11px;
+    padding: 8px 16px;
+    margin-left: 12px;
+  }
+  
+  .contact__btn svg {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* For very small screens, consider stacking vertically */
+@media (max-width: 360px) {
+  .home__nav {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .contact__link_btn {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+}
+
 @keyframes linemove {
   0% {
     width: 0%;
@@ -239,8 +330,10 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* align-items: flex-start; */
   padding-top: 50px;
   position: relative;
+  /* gap: 2rem; */
 }
 
 .hero__content__bottom__left {
@@ -248,6 +341,34 @@ html {
   flex-direction: column;
   padding-top: 18px;
   margin-left: 70px;
+  /* max-width: 50%;
+  z-index: 2;
+   flex-shrink: 1; */
+}
+
+.NasaPicture {
+  width: 45%;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1090px) {
+  .hero__content_bottom {
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .hero__content__bottom__left {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .NasaPicture {
+    width: 70%;
+  }
 }
 
 .hero__content__bottom__left img {
@@ -256,24 +377,101 @@ html {
   margin-bottom: 8px;
 }
 
+.hcb__left_t1__wrapper {
+  display: block;
+  margin-left: clamp(20px, 6.5vw, 70px); /* Responsive margin */
+  width: clamp(280px, 35vw, 380px); /* Responsive width */
+}
+
 .hcb__left_t1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 18px;
-  line-height: 28.8px;
+  font-size: clamp(16px, 1.6vw, 18px); /* Responsive font size */
+  line-height: 1.6;
+  width: 100%; /* Take full width of wrapper */
 }
 
 .hcb__left_t2 {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 80px;
-  font-size: 18px;
-  bottom: 100px;
-  left: 200px;
-  line-height: 28.8px;
+  font-size: clamp(16px, 1.6vw, 18px); /* Responsive font size */
+  line-height: 1.6;
+  width: 100%; /* Take full width of wrapper */
+}
+
+.hcb__left_t2__wrapper {
+  align-self: flex-start;
+  margin-left: clamp(40px, 18.5vw, 203px); /* Responsive margin */
+  margin-top: clamp(15px, 2vw, 20px); /* Responsive top margin */
+  width: clamp(280px, 35vw, 380px); /* Responsive width */
+}
+
+/* Tablet breakpoint */
+@media (max-width: 1090px) {
+  .hcb__left_t1__wrapper {
+    margin-left: clamp(15px, 4vw, 40px);
+    width: clamp(250px, 40vw, 320px); /* Smaller width for tablets */
+  }
+
+  .hcb__left_t2__wrapper {
+    margin-left: clamp(25px, 8vw, 80px);
+    margin-top: 15px;
+    width: clamp(250px, 40vw, 320px); /* Smaller width for tablets */
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+  .hero__content__bottom__left {
+    padding: 0 20px; /* Add some padding on mobile */
+  }
+
+  .hcb__left_t1__wrapper {
+    margin-left: 10px;
+    width: calc(100% - 20px); /* Full width minus margins */
+    max-width: 300px; /* Prevent it from getting too wide */
+  }
+
+  .hcb__left_t2__wrapper {
+    margin-left: 30px;
+    margin-top: 15px;
+    width: calc(100% - 50px); /* Full width minus margins */
+    max-width: 300px; /* Prevent it from getting too wide */
+  }
+
+  .hcb__left_t1,
+  .hcb__left_t2 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Center align text for mobile */
+  .hcb__left_t1 span,
+  .hcb__left_t2 span {
+    text-align: center;
+  }
+}
+
+/* Very small mobile screens */
+@media (max-width: 480px) {
+  .hcb__left_t1__wrapper,
+  .hcb__left_t2__wrapper {
+    margin-left: 5px;
+    width: calc(100% - 10px); /* Almost full width */
+    max-width: 280px;
+  }
+
+  .hcb__left_t2__wrapper {
+    margin-left: 15px;
+    width: calc(100% - 25px);
+  }
+
+  .hcb__left_t1,
+  .hcb__left_t2 {
+    font-size: 14px;
+  }
 }
 
 .NasaPicture {
@@ -333,9 +531,11 @@ html {
 }
 
 .about__top__text_p {
-  padding-top: 24px;
+  padding-top: 32px;
   font-weight: 400;
-  line-height: 28.8px;
+  line-height: 180%;
+  font-size: 16px;
+  color: #fcfcfc;
   text-align: justify;
 }
 
@@ -343,12 +543,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 29px;
+  padding-top: 56px;
 }
 
 .about__btm__text h4 {
   font-weight: 400;
   padding-right: 16px;
+  font-style: italic;
 }
 
 .about__btm__text span {
@@ -393,6 +594,16 @@ html {
 
 .info__section__left {
   border-right: 1px solid #fcfcfc;
+}
+
+.additional__info {
+  display: flex;
+  align-items: baseline;
+}
+
+.additional__info h3 {
+  font-weight: 300;
+  font-size: 26px;
 }
 
 /* Projects Section */
@@ -498,7 +709,7 @@ html {
 
 .placeholder {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   text-align: center;
   padding-top: 105px;
@@ -507,12 +718,12 @@ html {
 
 .placeholder h3 {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: italic;
 }
 
 .placeholder img {
-  margin-left: 5px;
+  margin-bottom: 2px;
 }
 
 .dots {
@@ -521,7 +732,7 @@ html {
   text-align: left;
   font-family: monospace;
   position: relative;
-  top: 2px; 
+  top: 2px;
 }
 
 .contact__section {
@@ -697,7 +908,7 @@ html {
 }
 
 footer {
-  background: #0C0C0C;
+  background: #0c0c0c;
   padding: 24px 80px;
   display: flex;
   justify-content: space-between;
