@@ -841,7 +841,7 @@ html {
   padding-top: 20px;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: clamp(10px, 2vw, 16px);
   letter-spacing: 1px;
 }
 
@@ -887,11 +887,9 @@ html {
   .projects__list__frame a{
     font-size: 20px;
   }
-   .projects__list__frame p{
-    font-size: 12px;
-   }
+   
    .projects__list svg{
-     max-width: 40px; /* or whatever fits */
+     max-width: 60px; /* or whatever fits */
   height: auto;
    }
 }
