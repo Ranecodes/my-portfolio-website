@@ -1093,6 +1093,12 @@ html {
   .contact__text {
     text-align: center;
   }
+  .contact__mid__sec h3 {
+    font-size: 20px;
+  }
+  .contact__mid__sec p {
+    font-size: 14px;
+  }
 }
 
 .contact__form {
