@@ -98,11 +98,19 @@
             aria-label="Leave a Message"
           >
             <!-- Your message icon SVG here -->
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="32" height="32" rx="16" fill="#0C0C0C"/>
-<path d="M10.6663 21.3333C10.2997 21.3333 9.98568 21.2027 9.72434 20.9413C9.46301 20.68 9.33256 20.3662 9.33301 20V12C9.33301 11.6333 9.46368 11.3193 9.72501 11.058C9.98634 10.7967 10.3001 10.6662 10.6663 10.6667H21.333C21.6997 10.6667 22.0137 10.7973 22.275 11.0587C22.5363 11.32 22.6668 11.6338 22.6663 12V20C22.6663 20.3667 22.5357 20.6807 22.2743 20.942C22.013 21.2033 21.6992 21.3338 21.333 21.3333H10.6663ZM15.9997 16.6667L21.333 13.3333V12L15.9997 15.3333L10.6663 12V13.3333L15.9997 16.6667Z" fill="white"/>
-</svg>
-
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="32" height="32" rx="16" fill="#0C0C0C" />
+              <path
+                d="M10.6663 21.3333C10.2997 21.3333 9.98568 21.2027 9.72434 20.9413C9.46301 20.68 9.33256 20.3662 9.33301 20V12C9.33301 11.6333 9.46368 11.3193 9.72501 11.058C9.98634 10.7967 10.3001 10.6662 10.6663 10.6667H21.333C21.6997 10.6667 22.0137 10.7973 22.275 11.0587C22.5363 11.32 22.6668 11.6338 22.6663 12V20C22.6663 20.3667 22.5357 20.6807 22.2743 20.942C22.013 21.2033 21.6992 21.3338 21.333 21.3333H10.6663ZM15.9997 16.6667L21.333 13.3333V12L15.9997 15.3333L10.6663 12V13.3333L15.9997 16.6667Z"
+                fill="white"
+              />
+            </svg>
           </a>
         </div>
       </nav>
@@ -111,7 +119,7 @@
       <section class="hero__section">
         <div class="hero__content__left">
           <span class="hcl__3">FRONT-END DEVELOPER</span
-          ><span class="hcl__2" style="font-size: 50px">&#9679;</span
+          ><span class="hcl__2">&#9679;</span
           ><span class="hcl__1">Raneh Egbe</span>
         </div>
         <hr class="nav__underline" />
@@ -480,9 +488,9 @@
       <section class="contact__section">
         <div class="contact__top">
           <span class="cs__1">Get in touch</span
-          ><span class="cs__2" style="font-size: 50px">&#9679;</span
+          ><span class="cs__2">&#9679;</span
           ><span class="cs__3">Leave a message</span
-          ><span class="cs__2" style="font-size: 50px">&#9679;</span
+          ><span class="cs__2">&#9679;</span
           ><span class="cs__4">Connect with me online</span>
         </div>
         <hr class="nav__underline" />
@@ -520,12 +528,12 @@
           <div class="about__top">
             <h3 class="about__top__text">
               An Engineer, and overall chill girl
+              <img
+                src="/images/emoji2.png"
+                class="about__top__emoji"
+                alt="cool emoji"
+              />
             </h3>
-            <img
-              src="/images/emoji2.png"
-              style="height: 32px; margin-left: 20px"
-              alt="cool emoji"
-            />
           </div>
 
           <p class="about__top__text_p">
@@ -542,11 +550,13 @@
           </p>
           <div class="about__btm__text">
             <h4>My Languages>></h4>
-            <span>React</span>
-            <span>JavaScript</span>
-            <span>TypeScript</span>
-            <span>Nextjs</span>
-            <span>Vue</span>
+            <div class="about__btm__text__languages">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>Nextjs</span>
+              <span>Vue</span>
+            </div>
           </div>
         </div>
       </section>
@@ -570,13 +580,7 @@
             </svg>
 
             <div class="additional__info">
-              <h3>Other times I like</h3>
-              <div
-                class="dots"
-                style="font-family: Roboto Mono; font-size: 26px"
-              >
-                .
-              </div>
+              <h3 style="display: inline;">Other times I like <span class="dots" style="font-family: Roboto Mono; font-size: 26px;">.</span></h3>
             </div>
 
             <p>
@@ -585,6 +589,7 @@
               challenging myself to grow both personally and professionally.
             </p>
           </div>
+          <hr />
           <div class="info__section__right">
             <svg
               width="32"
@@ -603,13 +608,7 @@
             </svg>
 
             <div class="additional__info">
-              <h3>Currently listening to</h3>
-              <div
-                class="dots"
-                style="font-family: Roboto Mono; font-size: 26px"
-              >
-                .
-              </div>
+              <h3 style="display: inline;">Currently listening to <span class="dots" style="font-family: Roboto Mono; font-size: 26px;">.</span></h3>
             </div>
             <p>I really like this song called Kilimanjaro by Tsuni.</p>
           </div>
@@ -621,12 +620,10 @@
       <section id="contact__section" class="contact__section">
         <div class="contact__mid__sec">
           <h3>Talk to me</h3>
-          <p>
-            I’m always open to collaborate, so if you have a proposal, <br />
-            question or if you just want to say
-            <span style="display: inline-flex; align-items: center; gap: 5px">
-              hi<span class="dots" style="width: 3rem">.</span>
-            </span>
+          <p class="contact__text">
+            I’m always open to collaborate, so if you have a proposal, question
+            or if you just want to say
+            <span class="say-hi"> hi<span class="dots">.</span> </span>
           </p>
         </div>
         <form
