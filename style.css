@@ -890,6 +890,10 @@ html {
    .projects__list__frame p{
     font-size: 12px;
    }
+   .projects__list svg{
+     max-width: 40px; /* or whatever fits */
+  height: auto;
+   }
 }
 
 .find__more__link {
