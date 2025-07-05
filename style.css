@@ -880,6 +880,10 @@ html {
 }
 
 @media (max-width: 768px){
+  .projects__section{
+    padding: 40px;
+  }
+
   .projects__list__frame a{
     font-size: 20px;
   }
